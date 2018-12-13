@@ -10,6 +10,8 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'ervandew/supertab'
+Plugin 'vim-airline/vim-airline'
 
 " end of plugins
 
@@ -25,10 +27,11 @@ Plugin 'scrooloose/nerdtree'
 
 " maps 
 inoremap esc <esc>
-
-
 nmap <leader>fs :NERDTreeToggle<cr>
-
+nmap <C-h> <C-w>h
+nmap <C-j> <C-w>j
+nmap <C-k> <C-w>k
+nmap <C-l> <C-w>l
 
 
 " end of maps
