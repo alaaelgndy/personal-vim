@@ -14,6 +14,7 @@ Plugin 'ervandew/supertab'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'kien/ctrlp.vim'
+Plugin 'fatih/vim-go'
 
 
 " end of plugins
@@ -23,6 +24,8 @@ Plugin 'kien/ctrlp.vim'
 " settings 
 :set number
 :set cursorline
+:set relativenumber
+
 
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ' '
