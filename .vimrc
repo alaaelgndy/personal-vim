@@ -10,23 +10,38 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
-Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'ervandew/supertab'
+Plugin 'tpope/vim-surround'    
+Plugin 'tomtom/tcomment_vim'
+Plugin 'Townk/vim-autoclose'
+
+
+" git plugins 
+Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plugin 'tpope/vim-fugitive'   
+Plugin 'airblade/vim-gitgutter'
+
+" php plugins
+Plugin 'shawncplus/phpcomplete.vim'  " can't use it till now
+
+
+" search plugins 
+Plugin 'xolox/vim-easytags'
+Plugin 'majutsushi/tagbar'
+Plugin 'mileszs/ack.vim'
+Plugin 'Lokaltog/vim-easymotion'
+Plugin 'kien/ctrlp.vim'
+Plugin 'xolox/vim-misc'
+
+
+" go plugins
+Plugin 'fatih/vim-go'
+
+
+" themes and colors
+Plugin 'chriskempson/base16-vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'kien/ctrlp.vim'
-Plugin 'fatih/vim-go'
-Plugin 'tpope/vim-fugitive'    "git
-Plugin 'tpope/vim-surround'    "braces
-Plugin 'mileszs/ack.vim'
-Plugin 'chriskempson/base16-vim'
-Plugin 'Lokaltog/vim-easymotion'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'tomtom/tcomment_vim'
-Plugin 'shawncplus/phpcomplete.vim'
-Plugin 'majutsushi/tagbar'
-Plugin 'xolox/vim-easytags'
-Plugin 'xolox/vim-misc'
 
 
 " end of plugins
@@ -46,8 +61,6 @@ let g:airline#extensions#tabline#left_alt_sep = '|'
 
 
 
-
-
 " end of settings
 
 " maps 
@@ -57,6 +70,13 @@ nmap <C-h> <C-w>h
 nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
 nmap <C-l> <C-w>l
+
+
+" comment block
+" tcomment_vim plugin
+nmap ggcc <c-_>b 
+
+
 
 
 " end of maps
