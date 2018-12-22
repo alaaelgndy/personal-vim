@@ -52,7 +52,9 @@ Plugin 'vim-airline/vim-airline-themes'
 :set number
 :set cursorline
 :set relativenumber
-
+:set shiftwidth=4
+:set autoindent
+:set smartindent
 
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ' '
