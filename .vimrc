@@ -22,7 +22,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
 
 " php plugins
-" Plugin 'valloric/youcompleteme'  
+Plugin 'valloric/youcompleteme'  
 Plugin 'shawncplus/phpcomplete.vim'  " can't use it till now
 
 
@@ -61,6 +61,7 @@ Plugin 'vim-airline/vim-airline-themes'
 :set hidden
 :set showtabline=0
 
+:set encoding=utf-8
 
 
 
