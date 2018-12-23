@@ -22,6 +22,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
 
 " php plugins
+" Plugin 'valloric/youcompleteme'  
 Plugin 'shawncplus/phpcomplete.vim'  " can't use it till now
 
 
@@ -32,6 +33,7 @@ Plugin 'mileszs/ack.vim'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'kien/ctrlp.vim'
 Plugin 'xolox/vim-misc'
+Plugin 'vim-ctrlspace/vim-ctrlspace'
 
 
 " go plugins
@@ -55,13 +57,21 @@ Plugin 'vim-airline/vim-airline-themes'
 :set shiftwidth=4
 :set autoindent
 :set smartindent
+:set nocompatible
+:set hidden
+:set showtabline=0
+
+
+
+
 
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
 
 
-
+let g:ycm_keep_logfiles = 1
+let g:ycm_log_level = 'debug'
 
 " end of settings
 
