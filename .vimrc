@@ -22,9 +22,9 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
 
 " php plugins
-Plugin 'valloric/youcompleteme'  
 Plugin 'shawncplus/phpcomplete.vim'  " can't use it till now
-
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
 
 " search plugins 
 Plugin 'xolox/vim-easytags'
@@ -73,6 +73,10 @@ let g:airline#extensions#tabline#left_alt_sep = '|'
 
 let g:ycm_keep_logfiles = 1
 let g:ycm_log_level = 'debug'
+
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 " end of settings
 
