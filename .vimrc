@@ -51,17 +51,19 @@ Plugin 'vim-airline/vim-airline-themes'
 
 
 " settings 
-:set number
-:set cursorline
-:set relativenumber
-:set shiftwidth=4
-:set autoindent
-:set smartindent
-:set nocompatible
-:set hidden
-:set showtabline=0
-
-:set encoding=utf-8
+set number
+set cursorline
+set relativenumber
+set shiftwidth=4
+set autoindent
+set smartindent
+set nocompatible
+set hidden
+set showtabline=0
+set tabstop=4
+set softtabstop=4
+set expandtab
+set encoding=utf-8
 
 
 
@@ -74,7 +76,7 @@ let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:ycm_keep_logfiles = 1
 let g:ycm_log_level = 'debug'
 
-let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsExpandTrigger="<leader>c"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
