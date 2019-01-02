@@ -85,6 +85,7 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 " maps 
 inoremap esc <esc>
 nmap <leader>fs :NERDTreeToggle<cr>
+nmap <leader>tb :Tagbar<cr>
 nmap <C-h> <C-w>h
 nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
