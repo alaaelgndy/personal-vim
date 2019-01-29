@@ -25,6 +25,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'shawncplus/phpcomplete.vim'  " can't use it till now
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
+Plugin 'vim-syntastic/syntastic'
 
 " search plugins 
 Plugin 'xolox/vim-easytags'
@@ -34,6 +35,7 @@ Plugin 'Lokaltog/vim-easymotion'
 Plugin 'kien/ctrlp.vim'
 Plugin 'xolox/vim-misc'
 Plugin 'vim-ctrlspace/vim-ctrlspace'
+Plugin 'Yggdroot/indentLine'
 
 
 " go plugins
@@ -54,18 +56,34 @@ Plugin 'vim-airline/vim-airline-themes'
 set number
 set cursorline
 set relativenumber
-set shiftwidth=4
 set autoindent
+set cindent 
 set smartindent
 set nocompatible
 set hidden
 set showtabline=0
 set tabstop=4
 set softtabstop=4
+set shiftwidth=4
 set expandtab
 set encoding=utf-8
-
-
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+set list
+" makes cursor on the begining of tab characters. makes it behaves like other editors
+set listchars=tab:\ \
+" view tabs with pipe character and three spaces to proper view indent guides
+" set listchars=tab:\|\
+" set listchars=tab:\|.
+set listchars=tab:\|-
+" set listchars=tab:\|_
+" set listchars=tab:\>.
+" set listchars=tab:\>-
+" set listchars=tab:\>\
+" set listchars=tab:.\
+" set listchars+=trail:.
+set listchars+=extends:>
 
 
 let g:airline#extensions#tabline#enabled = 1
@@ -79,6 +97,15 @@ let g:ycm_log_level = 'debug'
 let g:UltiSnipsExpandTrigger="<leader>c"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_php_checkers = ['php', 'phpcs', 'phpmd']
+
 
 " end of settings
 
