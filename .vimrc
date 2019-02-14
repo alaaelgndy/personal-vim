@@ -124,6 +124,9 @@ nmap <C-l> <C-w>l
 nmap ggcc <c-_>b 
 
 
+" Resize splitting windows horizontally
+nnoremap + :vertical resize +5<CR>
+nnoremap - :vertical resize -5<CR>
 
 
 " end of maps
